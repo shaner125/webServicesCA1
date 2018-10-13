@@ -17,7 +17,7 @@ public class RomanConverterApp {
 					
   @GET
   @Path("/{param}")
-  public Response sayHelloWorld(@PathParam("param") String message) {
+  public Response ConvertResponse(@PathParam("param") String message) {
 					
     String output = message+" converted to roman numerals = "+RomanNumerals(Integer.parseInt(message)) + "!";
 					
