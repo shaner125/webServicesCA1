@@ -13,7 +13,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 					
 @Path("/RomanConverter") 
-public class Tester {
+public class RomanConverterApp {
 					
   @GET
   @Path("/{param}")
