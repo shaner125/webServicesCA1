@@ -26,14 +26,14 @@ public class Tester {
   }
   
   public String weatherResponse(String city){
-      Client client=ClientBuilder.newClient();
-String name = client.target("http://api.openweathermap.org/data/2.5/forecast?q="+city+"&mode=json&appid=3f9c27e7c5fabd691ebf9198721dfdd1")
-.request(MediaType.APPLICATION_JSON)
-.get(String.class);
-System.out.println(name);
-client.close() ;
-return name;
-  }
-					
+        Client client=ClientBuilder.newClient();
+        String name = client.target("http://api.openweathermap.org/data/2.5/forecast?q="+city+"&mode=json&appid=3f9c27e7c5fabd691ebf9198721dfdd1")
+        .request(MediaType.APPLICATION_JSON)
+        .get(String.class);
+        System.out.println(name);
+        client.close() ;
+        return name;
+          }
+
 }
 
