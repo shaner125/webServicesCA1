@@ -14,7 +14,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 					
 @Path("/weather") 
-public class Tester {
+public class OpenWeatherApi {
 					
   @GET
   @Path("/{param}")
